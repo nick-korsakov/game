@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Горячие клавиши</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex-game">
+    <div class="hint" id="hi">
+      <div class="but">
+        <a href="game.html"
+          ><button class="one floating-button">Меню</button></a
+        >
+        <a href="menu.html"
+          ><button class="two floating-button">Обучение</button></a
+        >
+      </div>
+      <p class="pod modal-window-close">Ctrl + W</p>
+      <button class="floating-button">Подсказка</button>
+    </div>
+    <div class="cent">
+      <h1 class="cen">Какое сочетание клавиш используется для закрытия текущего окна?</h1>
+      <div>
+        <a href="index56.html" class="button1 green" id="button-1">Ctrl + W</a>
+        <a href="#" class="button1 green" id="button-2">Ctrl + B</a>
+        <a href="#" class="button1 green" id="button-3">Ctrl + Tab</a>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+      $(function () {
+        $("#button-2").click(function () {
+          $(this).removeClass("green");
+          $(this).addClass("red");
+        });
+      });
+      $(function () {
+        $("#button-3").click(function () {
+          $(this).removeClass("green");
+          $(this).addClass("red");
+        });
+      });
+      $("#hi").on("click", function () {
+        $(".pod").removeClass("modal-window-close");
+        $("div.pod").addClass("is-open");
+      });
+    </script>
+  </body>
+</html>
