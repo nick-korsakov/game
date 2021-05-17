@@ -1,0 +1,15 @@
+{
+  "background_color": "black",
+  "description": "Игра Горячие клавиши позволяет научиться более эффективно использовать компьютер",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Горячие клавиши",
+  "short_name": "Hotkeys",
+  "start_url": "/game/index.html"
+}
