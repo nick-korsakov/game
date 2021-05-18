@@ -1,7 +1,7 @@
 // Зарегистрировать обработчик приложения для возможности его рабты без подключения к сети.
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/game/js/sw.js')
+    .register('/game/sw.js')
     .then(() => { console.log('Обработчик приложения зарегистрирован'); });
 }
 

@@ -11,7 +11,7 @@ self.addEventListener('install', (e) => {
       '/game/js/jquery-3.3.1.js',
       '/game/js/shortcut.js',
       '/game/js/main.js',
-      '/game/js/sw.js',
+      '/game/sw.js',
       '/game/game.html',
       '/game/index.html',
       '/game/index1.1.html',
