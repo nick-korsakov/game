@@ -8,7 +8,7 @@ if ('serviceWorker' in navigator) {
 // Код управления установкой приложения на компьютер.
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
-addBtn.style.display = 'none';
+// addBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
   // Предотвратить отображение приглашения в Chrome 67 и ниже.
